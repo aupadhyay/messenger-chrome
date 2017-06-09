@@ -4,14 +4,15 @@
   "description": "Make the current page red",
   "version": "2.0",
   "permissions": [
-    "activeTab"
+    "tabs", "webRequest","*://*.messenger.com/"
   ],
   "background": {
-    "scripts": ["jquery.js","sample.js"],
-    "persistent": false
+    "page": "background.html",
+    "persistent": true
   },
   "browser_action": {
-    "default_title": "Make this page red"
+    "default_icon": "icon.png"
   },
+
   "manifest_version": 2
 }
